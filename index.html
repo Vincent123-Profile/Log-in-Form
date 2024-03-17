@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincent Tech World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-animation">
+    <div class="container">
+      <div class="vin">
+        <h1>Welcome to Vincent Tech World</h1>
+      </div>
+      <div class="fieldset">
+        <fieldset class="login-form">
+          <legend>Login</legend>
+          <form>
+            <div class="input-group">
+              <label for="email">Email Address:</label>
+              <input type="text" id="email" name="email" required>
+            </div>
+            <div class="input-group password-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <span class="toggle-password" onclick="togglePasswordVisibility()">&#x1f441;</span>
+            </div>
+            <div class="forgot-password">
+              <a href="Forgotten.html">Forgot password</a>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <div class="signup-link">
+            Not yet a member yet? <a href="signup.html">Sign up</a>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <script>
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+      var toggleButton = document.querySelector(".toggle-password");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleButton.innerHTML = "&#x1f440;"; // Eye open emoji
+      } else {
+        passwordInput.type = "password";
+        toggleButton.innerHTML = "&#x1f441;"; // Eye closed emoji
+      }
+    }
+  </script>
+</body>
+</html>

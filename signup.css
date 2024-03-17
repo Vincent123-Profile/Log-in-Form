@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    position: relative;
+    background-image: url('new\ 4.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: backgroundChange 10s infinite;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-image: url('new\ 2.jpg');
+    }
+    50% {
+        background-image: url('new\ 5.jpg');
+    }
+    100% {
+        background-image: url('New\ 1.jpg');
+    }
+}
+
+.signup-form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+}
+
+.signup-form h2 {
+    margin-top: 0; /* Remove top margin to avoid extra space */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-form p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.password-toggle {
+    position: relative;
+}
+
+.password-toggle input[type="password"] {
+    padding-right: 40px; /* space for toggle button */
+}
+
+.password-toggle .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.signup-form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .signup-form {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .signup-form {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .signup-form {
+        max-width: 95%;
+    }
+}
