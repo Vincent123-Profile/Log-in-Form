@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     background-image: url('new\ 4.jpg');
     background-size: cover;
     background-position: center;
@@ -20,16 +23,41 @@ body {
     }
 }
 
-div .Password-Reset {
+.fieldset {
     color: white;
     width: 300px;
+    height: 300px;
+    padding: 40px;
+    margin-top: 100px;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
 }
 
-.background.animation {
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px solid white;
+div .input {
+    height: 50px;
+    font-weight: 100;
 }
+
+button {
+    color: white;
+    padding: 12px 24px;
+    background-color: rgb(72, 72, 197);
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
 
 
 
